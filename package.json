@@ -1,0 +1,30 @@
+{
+  "name": "hex-arch-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec npx babel-node -- index.js",
+    "jsdoc": "jsdoc -c jsdoc.json -d jsdoc -r .",
+    "test:unit": "mocha -r ./testbed.js '**/__test__/*.js'",
+    "test:unit:watch": "mocha --watch -r ./testbed.js '**/__test__/*.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "chai": "^4.2.0",
+    "didi": "^5.2.1",
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "sinon": "^9.2.1"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.12.1",
+    "jsdoc": "^3.6.6"
+  }
+}
